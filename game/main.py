@@ -17,7 +17,7 @@ class Main:
         print 'Initializing game.'
         #using pygame
         pygame.init()
-	self.clock = pygame.time.Clock()
+        self.clock = pygame.time.Clock()
         self.paddle = o.Paddle()
         self.ball = o.Ball()
         self.block_container = o.BlockContainer()
