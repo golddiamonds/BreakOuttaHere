@@ -17,6 +17,7 @@ class Main:
         print 'Initializing game.'
         #using pygame
         pygame.init()
+        self.clock = pygame.time.Clock()
         self.paddle = o.Paddle()
         self.ball = o.Ball()
         self.block_container = o.BlockContainer()
@@ -60,7 +61,7 @@ class Main:
                                         paddlex=self.paddle.x, paddley=self.paddle.y,
                                         block_container=self.block_container)
 
-                sleep(.005)
+                self.clock.tick(60)
 
 
     def quitGame(self):
